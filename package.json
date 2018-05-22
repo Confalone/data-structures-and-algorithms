@@ -1,0 +1,25 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "Given a set of numbers return the same set in reverse order.",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "jest": "^22.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Confalone/data-structures-and-algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Confalone/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/Confalone/data-structures-and-algorithms#readme"
+}
