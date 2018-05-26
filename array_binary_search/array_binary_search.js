@@ -2,21 +2,14 @@
 
 module.exports = exports = {};
 
-exports.insertShiftArray = (array, number) => {
+exports.BinarySearch = (array, key) => {
 
-  let insertShiftArray = [];
-  let mid = Math.ceil(array.length/2);
+  let arrayI = -1;
 
-  for (let i=0;i<array.length+1; i++) {
-    if (i<mid) {
-      insertShiftArray[i] = array[i];
-    }
-    if (i===mid) {
-      insertShiftArray[i] = number;
-    }
-    else if (i>mid) {
-      insertShiftArray[i] = array[i-1];
+  for (let i=0;i<array.length; i++) {
+    if (array[i] == key) {
+      arrayI = i;
     }
   }
-  return insertShiftArray;
+  return arrayI;
 };
