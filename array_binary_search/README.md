@@ -1,8 +1,8 @@
 # Binary Search
-<!-- Short summary or background information -->
+go through an array find a key;  return the index of the array the key falls on
 
 ## Challenge
-<!-- Description of the challenge -->
+using a key find the index it is placed in the array
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![whiteboard](/assets/array-binary_search.jpg)
