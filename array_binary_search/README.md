@@ -5,4 +5,4 @@ go through an array find a key;  return the index of the array the key falls on
 using a key find the index it is placed in the array
 
 ## Solution
-![whiteboard](assets/array-binary_search.jpg)
+![whiteboard](/assets/array-binary_search.jpg)
