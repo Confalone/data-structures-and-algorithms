@@ -1,3 +1,5 @@
+<a href:="https://travis-ci.com/Confalone/data-structures-and-algorithms.svg?branch=master">
+
 # Binary Search
 go through an array find a key;  return the index of the array the key falls on
 
