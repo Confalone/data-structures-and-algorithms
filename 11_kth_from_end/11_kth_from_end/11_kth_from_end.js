@@ -1,3 +1,27 @@
-'use strict';
-Feature Tasks
-Write a method for the Linked List class which takes a number, k, as a parameter. Return the node that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges. ​
+class LinkedList {
+  constructor() {
+    this.head = null;
+  
+    ll_kth_from_end(k) { // BIG O(n)
+      let current = this.head;
+      let counter = 0;
+      let next = current.next;
+      let previous = null;
+  
+      while(counter !== k) {
+        if(!current.next) throw 'the offset value must be smaller than the length of the Linked List ';
+        previous = current;
+        current = current.next;
+        next = current.next;
+        counter++;
+      }
+  
+      if(this.head === current) {
+        this.head.next = null;
+        this.head = next;
+      } else {
+        current.next = null;
+        previous.next = next;
+      }
+      return this;
+    }
