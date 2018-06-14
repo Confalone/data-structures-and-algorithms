@@ -1,8 +1,10 @@
+'use strict';
+
 class LinkedList {
   constructor() {
     this.head = null;
   
-    ll_kth_from_end(k) { // BIG O(n)
+    ll_kth_from_end(k) {
       let current = this.head;
       let counter = 0;
       let next = current.next;
@@ -25,3 +27,5 @@ class LinkedList {
       }
       return this;
     }
+  }
+}
