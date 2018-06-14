@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Confalone/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.com/Confalone/data-structures-and-algorithms)
+
 # kth from the end of a Linked List
 The goal of this WB is to write a linked list class which takes a number as a parameter and returns the node that is from the end of the linked list.   
 
