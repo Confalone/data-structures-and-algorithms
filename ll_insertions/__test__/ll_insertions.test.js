@@ -1,6 +1,6 @@
 'use strict';
 
-const LinkedList = require('../lib/linked-list');
+const LinkedList = require('../lib/ll_insertions');
 
 describe('Linked list', () => {
   it ('append: should append a node to the end of a linked-list.', () =>{
@@ -33,7 +33,7 @@ describe('Linked list', () => {
   it('insertBefore: node value passed in should replace value of the head node', () => {
     let list = new LinkedList();
     list.append(4);
-    list.prepend(3);
+    list.insertBefore(3);
 
     expect(list.head.value).toEqual(3);
     expect(list.head.next.value).toEqual(4);
@@ -44,7 +44,7 @@ describe('Linked list', () => {
     list.append(4);
     list.append(3);
     list.append(2);
-    list.prepend(1);
+    list.insertBefore(1);
 
     expect(list.head.value).toEqual(1);
     expect(list.head.next.value).toEqual(4);
@@ -54,14 +54,14 @@ describe('Linked list', () => {
     let list = new LinkedList();
     
     expect(() => {
-      list.prepend();
+      list.insertBefore();
     }).toThrow();
   });
   it ('insertAfter: should append a node to the end of a linked-list.', () =>{
     let list = new LinkedList();
     list.append(4);
     list.append(5);
-    list.append(6);
+    list.insertAfter(6);
 
     expect(list.head.value).toEqual(4);
     expect(list.head.next.value).toEqual(5);
@@ -73,14 +73,8 @@ describe('Linked list', () => {
     let list = new LinkedList();
     
     expect(() => {
-      list.append();
+      list.insertAfter();
     }).toThrow();
   });
 
-  it('insertAfter: if linked list is empty, value should replace the head value', () => {
-    let list = new LinkedList();
-    list.append(9);
-
-    expect(list.head.value).toEqual(9);
-  })
 });
