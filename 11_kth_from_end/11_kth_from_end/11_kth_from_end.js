@@ -11,7 +11,7 @@ class LinkedList {
       let previous = null;
   
       while(counter !== k) {
-        if(!current.next) throw 'the offset value must be smaller than the length of the Linked List ';
+        if(!current.next) throw 'the k value must be smaller than the length of the Linked List ';
         previous = current;
         current = current.next;
         next = current.next;
