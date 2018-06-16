@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Confalone/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.com/Confalone/data-structures-and-algorithms)
+
 ## Linked List Insertions
 ###The goal of this WB is to manipulate a linked-list.   
 
