@@ -6,4 +6,4 @@ Given a set of numbers return the same set in reverse order.
 Challenge was to handle an array of numbers and return the array in reverse order.
 
 ## Solution
-![whiteboard](assets/array-reverse.jpg)
+![whiteboard](assets)
