@@ -1,6 +1,6 @@
 'use strict';
 
-for (i =1; i <= 100; i++) {
+for (i = 1; i <= 100; i++) {
   var output = '';
 
   if (i % 3 === 0) {output += 'Fizz';}
