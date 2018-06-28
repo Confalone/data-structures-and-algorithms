@@ -16,6 +16,6 @@ describe('fizzbuzztree', () => {
 
       console.log(output);
     }
-    expect(output[3]).toBe(Fizz);
+    expect(i[3]).toBe(Fizz);
   });
 });
