@@ -9,16 +9,16 @@ module.exports = class BinaryTree {
   inOrder() {
     let results = [];
 
-    let walk = (node) => {
+    let _walk = (node) => {
 
-      if (node.left) {walk(node.left);}
+      if (node.left) {_walk(node.left);}
 
       results.push(node.value);
 
-      if(node.right) {walk(node.right);}
+      if(node.right) {_walk(node.right);}
       
     };
-    walk(this.root);
+    _walk(this.root);
 
     return results.toString();
   }

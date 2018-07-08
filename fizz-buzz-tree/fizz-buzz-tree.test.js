@@ -38,6 +38,6 @@ describe('fizzbuzztree', () => {
     fizzBuzzTree(tree);
 
 
-    expect(tree.root.left.root).toBe(3);
+    expect(tree.root.right.root).toBe(3);
   });
 });
