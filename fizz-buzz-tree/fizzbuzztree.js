@@ -1,14 +1,21 @@
 'use strict';
 
-let i = 0; 
+module.exports = function fizzBuzzTree(tree) {
 
-for (i = 1; i <= 100; i++) {
-  var output = '';
+  let walk = (node) => {
+    if (node.left) {
+      walk(node.left);
+    }
+    if (node.value % 3 === 0) {node.value = 'Fizz';}
+    else if (node.value % 5 === 0) {node.value = 'Buzz';}
 
-  if (i % 3 === 0) {output += 'Fizz';}
-  if (i % 5 === 0) {output += 'Buzz';}
+    if (node.right) {
+      walk(node.right);
+    }
+  };
 
-  if (output == '') {output = i;}
-
-  console.log(output);
-}
+  walk(tree.root);
+  
+  return tree;
+  
+};
