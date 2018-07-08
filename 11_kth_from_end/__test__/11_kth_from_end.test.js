@@ -1,4 +1,7 @@
 'use strict';
+
+const LinkedList = require('./11_kth_from_end');
+
 it('ll_kth_from_end(): should remove a chosen element from the ll', () => {
   let list = new LinkedList();
   list.append(6);
