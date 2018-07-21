@@ -7,4 +7,4 @@ The goal of this WB is to take in a binary tree and return the maximum value sto
 Take in a binary tree and return the maximum value stored in the tree. The values stored in the Binary Tree will be numeric.
 
 ## Solution
-![whiteboard](.jpeg)
+![whiteboard](find_max_value.jpeg)
