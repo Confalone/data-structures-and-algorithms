@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Confalone/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.com/Confalone/data-structures-and-algorithms)
+
 # Tree Data Structure
 #### Author: Tyler Confalone
 
@@ -70,3 +72,6 @@ deserialize(string) { // BIG O(n)
   }
 }
 ```
+
+
+License: MIT
