@@ -8,6 +8,9 @@ module.exports = class BinarySearchTree {
     this.root = root;
   }
   insert(value) {
+    if (typeof value != 'number') {
+      throw new TypeError('Value must be a number');
+    }
 
     const node = this.root;
 
@@ -16,7 +19,10 @@ module.exports = class BinarySearchTree {
       return;
     }
 
-    let _insert = (node) => {
+    let _insert = (node) => { 
+      if (node.value === value) {
+        throw new TypeError('Value already exists');
+      }
       if (value < node.value) {
         if (node.left === null) {
           node.left = new Node(value);
