@@ -1,6 +1,6 @@
 # Repeated Word
 #### Accept a lengthly string and return the first repeated word.
-([![Build Status](https://travis-ci.com/Confalone/data-structures-and-algorithms.svg?branch=master)
+![Build Status](https://travis-ci.com/Confalone/data-structures-and-algorithms.svg?branch=master)
 
 ## Challenge
 * Write a function called repeated_word which takes a lengthly string parameter as its unique input. Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
